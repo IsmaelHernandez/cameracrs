@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chale  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <ion-button (click)="imagePicker()">Seleccionar Imagenes</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="images-wrapper">
+          <div class="pick-single-image" *ngFor="let image of imgRes">
+            <img src="{{image}}" alt="" srcset="">
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <ion-button (click)="hacerFoto()">Hacer foto</ion-button>
+          <img [src]="foto" *ngIf="foto" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

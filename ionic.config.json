@@ -1,0 +1,8 @@
+{
+  "name": "camaracrs",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
